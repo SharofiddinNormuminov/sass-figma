@@ -1,0 +1,35 @@
+$color-navlinks: #434959;
+$color-white: #ffffff;
+$color-blue: #0066ff;
+$color-p: #505056;
+$color-header: #f8f9ff;
+$color-ds-h2-black: #2b2828;
+$color-bacIcon: #007aff;
+$color-bacAirs-black: #1f2029;
+$color-simple_background: #f8f9ff;
+$color-price-span: #0e1133;
+$color-price_p: #71717a;
+$color-bc_footer: #0F172A;
+@mixin paragraph {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+@mixin links-a {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 155%;
+}
+
+@mixin fonts_p2 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+@mixin h2-fonts {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 120%;
+}

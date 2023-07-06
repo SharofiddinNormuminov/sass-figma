@@ -1,0 +1,89 @@
+header {
+  background-color: $color-header;
+  padding-top: 20px;
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 64px;
+    .nav-left {
+      display: flex;
+      align-items: center;
+      gap: 60px;
+    }
+  }
+  .nav-left {
+    .nav-links {
+      display: flex;
+      gap: 48px;
+      a {
+        @include links-a;
+        letter-spacing: -0.54px;
+        color: $color-navlinks;
+        &:hover {
+          padding-bottom: 5px;
+          color: $color-blue;
+          border-bottom: 2px solid $color-bacIcon;
+        }
+      }
+    }
+  }
+  .nav-right {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    a {
+      @include links-a;
+      letter-spacing: -0.54px;
+      color: $color-navlinks;
+      &:hover {
+        padding-bottom: 5px;
+        color: $color-blue;
+        border-bottom: 2px solid $color-bacIcon;
+      }
+    }
+    button {
+      text-align: center;
+      @include links-a;
+      letter-spacing: -0.18px;
+      color: $color-white;
+      padding: 16px 40px;
+      border-radius: 10px;
+      background-color: $color-blue;
+      border: none;
+      &:hover {
+        color: red;
+        background-color: rgb(211, 255, 13);
+      }
+    }
+  }
+
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 43px;
+    .hero-left {
+      margin-top: -110px;
+      h1 {
+        width: 640px;
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 120%;
+        margin-bottom: 24px;
+      }
+      p {
+        width: 550px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 120%;
+        color: $color-p;
+        margin-bottom: 40px;
+      }
+      .market {
+        display: flex;
+        gap: 32px;
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.johnDoe {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 96px;
+  margin-bottom: 96px;
+  p {
+    width: 732px;
+    @include fonts_p2;
+    color: $color-p;
+    margin-bottom: 48px;
+  }
+  .johnDoe-left {
+    position: absolute;
+    left: 0px;
+  }
+  .johnDoe-right {
+    padding: 55px 70px 55px 150px;
+    border-radius: 12px;
+    background: #f5f9ff;
+    margin-left: 330px;
+  }
+  .johnDoe-right__content {
+    width: 720px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h6 {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 120%;
+      color: $color-ds-h2-black;
+      margin-bottom: 10px;
+    }
+    .item-right {
+      display: flex;
+      gap: 16px;
+    }
+    i {
+      background: #66a3ff;
+      border-radius: 50%;
+      padding: 10px 10px;
+      color: $color-white;
+      &:hover {
+        background: #06f;
+      }
+    }
+  }
+}

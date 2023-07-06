@@ -1,0 +1,96 @@
+.simpleEasy {
+  background-color: $color-simple_background;
+  padding-top: 112px;
+  padding-bottom: 112px;
+  h2 {
+    margin: 0 auto;
+    width: 676px;
+    @include h2-fonts;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .simpleEasy__p {
+    width: 733px;
+    @include paragraph;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .simpleEasy-prices {
+    margin-top: 130px;
+    display: flex;
+    justify-content: space-between;
+    .price {
+      padding: 32px;
+      border-radius: 6px;
+      background: $color-white;
+      &:hover {
+        box-shadow: 0px 8px 8px -4px rgba(16, 24, 40, 0.03),
+          0px 20px 24px -4px rgba(16, 24, 40, 0.08);
+      }
+    }
+    .price_txt {
+      padding-bottom: 29px;
+      padding-right: 50px;
+      border-bottom: 2px solid #9fcdff;
+      margin-bottom: 32px;
+    }
+    p {
+        margin-top: 21px;
+      @include paragraph;
+      color: $color-price_p;
+    }
+    .price_txt__p2 {
+      width: 260px;
+      @include paragraph;
+      color: $color-p;
+      margin-top: 21px;
+    }
+    span {
+      @include h2-fonts;
+      letter-spacing: -0.48px;
+      color: $color-price-span;
+      margin-right: 24px;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 17px;
+      margin-bottom: 40px;
+      li {
+        display: flex;
+        align-items: center;
+        @include paragraph;
+        color: $color-p;
+      }
+      i {
+        color: $color-bacIcon;
+        margin-right: 8px;
+      }
+      .ishlov_ber {
+        color: $color-p;
+        border: 2px solid $color-p;
+        border-radius: 50%;
+        padding: 2px 6px;
+        font-size: 9px;
+        margin-left: 8px;
+      }
+    }
+    button {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 120%;
+      text-align: center;
+      margin: 0 auto;
+      border-radius: 4px;
+      padding: 16px 50px;
+      color: $color-bacIcon;
+      border-color: $color-bacIcon;
+      background: $color-white;
+      &:hover {
+          color: $color-white;
+          background: $color-bacIcon;
+          border: none;
+      }
+    }
+  }
+}

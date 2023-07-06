@@ -1,0 +1,47 @@
+.keeping {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 112px;
+  margin-bottom: 112px;
+  .keeping-left {
+    margin-top: -100px;
+    h2 {
+      width: 686px;
+      @include h2-fonts;
+      color: $color-ds-h2-black;
+    }
+    .keeping-left-p {
+      width: 733px;
+      @include paragraph;
+      color: $color-p;
+      margin-top: 24px;
+      margin-bottom: 40px;
+    }
+    .keeping-left-contents {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 40px;
+    }
+  }
+  .content {
+    i {
+      font-size: 32px;
+      color: $color-bacIcon;
+    }
+    h4 {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 140%;
+      margin-top: 16px;
+      margin-bottom: 16px;
+    }
+    p {
+      width: 306px;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 120%;
+      color: $color-p;
+    }
+  }
+}

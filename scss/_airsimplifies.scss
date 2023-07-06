@@ -1,0 +1,44 @@
+.airSimplifies {
+  background: $color-bacAirs-black;
+  padding-top: 57px;
+  .airSimplifies-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .airSimplifies-right {
+    color: $color-white;
+
+    h3 {
+      width: 546px;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 120%;
+    }
+    .airSimplifies-right-p {
+      width: 550px;
+      @include paragraph;
+      margin-top: 18px;
+      margin-bottom: 36px;
+    }
+  }
+  .airSimplifies-right-content {
+    display: flex;
+    img {
+      padding: 12px;
+      border-radius: 4px;
+      border: 1px solid #393939;
+    }
+    h4 {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 120%;
+      margin-top: 12px;
+    }
+    p {
+      width: 266px;
+      @include paragraph;
+      margin-top: 12px;
+    }
+  }
+}
